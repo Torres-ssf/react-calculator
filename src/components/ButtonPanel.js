@@ -31,12 +31,12 @@ const ButtonPanel = () => {
         <Button buttonName="+" />
       </div>
       <div className="group g5">
-        <Button buttonName="0" color={greyColor} wide={true} />
+        <Button buttonName="0" color={greyColor} wide />
         <Button buttonName="." color={greyColor} />
         <Button buttonName="=" />
       </div>
     </div>
   );
-}
+};
 
 export default ButtonPanel;

@@ -18,7 +18,7 @@ export default Button;
 Button.defaultProps = {
   color: '#F5913E',
   wide: false,
-}
+};
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
