@@ -8,11 +8,11 @@ const Display = (props) => {
 };
 
 Display.defaultProps = {
-  result: 'o',
+  result: 0,
 };
 
 Display.propTypes = {
-  result: PropTypes.string,
+  result: PropTypes.number,
 };
 
 export default Display;

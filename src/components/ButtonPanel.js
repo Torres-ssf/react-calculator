@@ -1,28 +1,42 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = () => (
-  <div className="buttonPanel flex">
-    <Button buttonName="AC" />
-    <Button buttonName="+/-" />
-    <Button buttonName="%" />
-    <Button buttonName="÷" />
-    <Button buttonName="7" />
-    <Button buttonName="8" />
-    <Button buttonName="9" />
-    <Button buttonName="X" />
-    <Button buttonName="4" />
-    <Button buttonName="5" />
-    <Button buttonName="6" />
-    <Button buttonName="-" />
-    <Button buttonName="1" />
-    <Button buttonName="2" />
-    <Button buttonName="3" />
-    <Button buttonName="+" />
-    <Button buttonName="0" />
-    <Button buttonName="." />
-    <Button buttonName="=" />
-  </div>
-);
+const ButtonPanel = () => {
+  const greyColor = '#E0E0E0';
+
+  return (
+    <div className="buttonPanel flex">
+      <div className="group g1">
+        <Button buttonName="AC" color={greyColor} />
+        <Button buttonName="+/-" color={greyColor} />
+        <Button buttonName="%" color={greyColor} />
+        <Button buttonName="÷" />
+      </div>
+      <div className="group g2">
+        <Button buttonName="7" color={greyColor} />
+        <Button buttonName="8" color={greyColor} />
+        <Button buttonName="9" color={greyColor} />
+        <Button buttonName="X" />
+      </div>
+      <div className="group g3">
+        <Button buttonName="4" color={greyColor} />
+        <Button buttonName="5" color={greyColor} />
+        <Button buttonName="6" color={greyColor} />
+        <Button buttonName="-" />
+      </div>
+      <div className="group g4">
+        <Button buttonName="1" color={greyColor} />
+        <Button buttonName="2" color={greyColor} />
+        <Button buttonName="3" color={greyColor} />
+        <Button buttonName="+" />
+      </div>
+      <div className="group g5">
+        <Button buttonName="0" color={greyColor} wide={true} />
+        <Button buttonName="." color={greyColor} />
+        <Button buttonName="=" />
+      </div>
+    </div>
+  );
+}
 
 export default ButtonPanel;
