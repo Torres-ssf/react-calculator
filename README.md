@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[Heroku live linke](https://react-calculator-t99.herokuapp.com/).
+
 ## Available Scripts
 
 In the project directory, you can run:
