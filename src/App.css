@@ -1,3 +1,51 @@
 .App {
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #858694;
+    box-sizing: border-box;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 100px;
+    line-height: 78px;
+    padding: 8px 16px;
+    text-align: right;
+}
+
+.buttonPanel {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button {
+  box-sizing: border-box;
+  background-color: #E0E0E0;
+  border: 1px solid #D1D1D1;
+  flex: 1 0 25%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.button:nth-of-type(4n),
+.button:last-of-type {
+  background-color: #F5913E;
+}
+
+.button:nth-of-type(17) {
+  flex: 1 0 50%;
+}
+
+.button:nth-of-type(4n - 2) {
+  background-color: red;
 }

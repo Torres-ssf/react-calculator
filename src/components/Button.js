@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Button = (props) => {
   const { buttonName } = props;
 
-  return <div>{buttonName}</div>;
+  return <div className="button">{buttonName}</div>;
 };
 
 export default Button;
