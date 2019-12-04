@@ -48,9 +48,9 @@ yarn build
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- Github: [@githubhandle](https://github.com/Torres-ssf)
+- Github: [@Torres-ssf](https://github.com/Torres-ssf)
 
 ## 🤝 Contributing
 
