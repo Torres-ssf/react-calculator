@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = (props) => {
+const ButtonPanel = () => {
   const greyColor = '#E0E0E0';
 
   return (
