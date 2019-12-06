@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = (props) => {
   const greyColor = '#E0E0E0';
 
   return (
@@ -32,8 +32,8 @@ const ButtonPanel = () => {
       </div>
       <div className="group g5">
         <Button buttonName="0" color={greyColor} wide />
-        <Button buttonName="." color={greyColor} />
-        <Button buttonName="=" />
+        <Button buttonName="." type="" color={greyColor} />
+        <Button buttonName="=" type="equality" />
       </div>
     </div>
   );
