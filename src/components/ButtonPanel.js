@@ -32,8 +32,8 @@ const ButtonPanel = () => {
       </div>
       <div className="group g5">
         <Button buttonName="0" color={greyColor} wide />
-        <Button buttonName="." type="" color={greyColor} />
-        <Button buttonName="=" type="equality" />
+        <Button buttonName="." color={greyColor} />
+        <Button buttonName="=" />
       </div>
     </div>
   );
