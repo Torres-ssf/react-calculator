@@ -14,8 +14,7 @@ class App extends Component {
     };
   }
 
-  // eslint-disable-line
-  handleClickBtn = (button) => {
+  handleClickBtn = (button) => { // eslint-disable-line
     const data = calculate({ ...this.state }, button);
     this.setState({ ...data });
   }
