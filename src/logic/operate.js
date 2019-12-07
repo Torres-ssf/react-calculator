@@ -1,16 +1,27 @@
-import { evaluate } from 'mathjs';
+import Big from 'big.js';
 
 const operate = (num1, num2, operation) => {
-  let op;
-  if (operation === 'X') {
-    op = '*';
-  } else if (operation === '÷') {
-    op = '/';
-  } else {
-    op = operation;
+  let n = Big(num1);
+  let evaluation;
+
+  switch (operation) {
+    case '+':
+      evaluation = n.plus(num2);
+      break;
+    case '-':
+      evaluation = n.minus(num2);
+      break;
+    case 'x':
+      evaluation = n.times(num2);
+      break;
+    case '÷':
+      evaluation = n.div(num2);
+      break;
+    default:
+      evaluation = n.mod(num2);
   }
 
-  return evaluate(`${num1}${op}${num2}`).toString();
+  return evaluation.toString();
 };
 
 export default operate;

@@ -57,5 +57,5 @@ body {
 
 .button:hover {
   transition: 500ms;
-  opacity: 0.2;
+  opacity: 0.6;
 }
