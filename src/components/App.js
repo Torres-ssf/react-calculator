@@ -27,7 +27,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App flex">
+      <div className="App">
         <Display result={this.resultToStr()} />
         <ButtonPanel handleClick={this.handleClickBtn} />
       </div>
