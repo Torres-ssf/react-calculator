@@ -1,7 +1,12 @@
+body {
+  background: linear-gradient(60deg, #8547DA, #F49076);
+  background-repeat: no-repeat;
+}
+
 .App {
     margin: 30px auto;
     text-align: center;
-    width: 700px;
+    width: 400px;
 }
 
 .flex {
@@ -10,25 +15,50 @@
 }
 
 .display {
-  background-color: #858694;
+  background-color: #212121;
   box-sizing: border-box;
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   height: 100px;
-  line-height: 78px;
   padding: 8px 16px;
   text-align: right;
 }
 
-.group {
-  display: flex;
-  width: 100%;
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
 }
 
 .button {
   box-sizing: border-box;
-  border: 1px solid #D1D1D1;
   height: 100px;
   line-height: 100px;
+}
+
+.button:nth-of-type(4n - 3) {
+  background-color: #F7F7F7;
+}
+
+.button:nth-of-type(4n - 2) {
+  background-color: #F5F5F5;
+}
+
+.button:nth-of-type(4n - 1) {
+  background-color: #FBFBFB;
+}
+
+.button:nth-of-type(4n) {
+  background-color: #8547DA;
+}
+
+.button:nth-of-type(19) {
+  background-color: #E62F88;
+  grid-column: span 2;
+}
+
+.button:hover {
+  transition: 500ms;
+  opacity: 0.2;
 }

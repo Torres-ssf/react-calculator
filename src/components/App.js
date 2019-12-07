@@ -3,13 +3,25 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import '../App.css';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleClickBtn = (button) => {
+    console.log(button);
+  }
+
   render() {
     return (
       <div className="App flex">
         <Display />
-        <ButtonPanel />
+        <ButtonPanel handleClick={this.handleClickBtn} />
       </div>
     );
   }
