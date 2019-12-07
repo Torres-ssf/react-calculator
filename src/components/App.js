@@ -12,6 +12,8 @@ class App extends Component {
       next: null,
       operation: null,
     };
+    this.handleClickBtn = this.handleClickBtn.bind(this);
+    this.resultToStr = this.resultToStr.bind(this);
   }
 
   handleClickBtn(button) {
