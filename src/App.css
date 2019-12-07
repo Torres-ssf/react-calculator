@@ -1,26 +1,29 @@
 body {
-  background: linear-gradient(60deg, #8547DA, #F49076);
-  background-repeat: no-repeat;
+  background: linear-gradient(60deg, #0496FF, #9CFFFA);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App {
-    margin: 30px auto;
-    text-align: center;
-    width: 400px;
-}
-
-.flex {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .8);
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
 }
 
 .display {
-  background-color: #212121;
+  background-color: #393756;
   box-sizing: border-box;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  height: 100px;
+  min-height: 100px;
+  height: auto;
+  overflow-wrap: break-word;
   padding: 8px 16px;
   text-align: right;
 }
@@ -32,29 +35,24 @@ body {
 }
 
 .button {
+  background-color: #564D98;
   box-sizing: border-box;
+  color: white;
   height: 100px;
+  font-size: 1.3rem;
   line-height: 100px;
 }
 
-.button:nth-of-type(4n - 3) {
-  background-color: #F7F7F7;
+.button:nth-of-type(-n+4) {
+  background-color: #6B82F2;
 }
 
-.button:nth-of-type(4n - 2) {
-  background-color: #F5F5F5;
-}
-
-.button:nth-of-type(4n - 1) {
-  background-color: #FBFBFB;
-}
-
-.button:nth-of-type(4n) {
-  background-color: #8547DA;
+.button:nth-of-type(4n+4) {
+  background-color: #6B82F2;
 }
 
 .button:nth-of-type(19) {
-  background-color: #E62F88;
+  background-color: #FF1E4B;
   grid-column: span 2;
 }
 
