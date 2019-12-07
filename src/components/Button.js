@@ -7,7 +7,8 @@ const Button = (props) => {
   return (
     <div
       className="button"
-      onClick={() => handleClick(children)}>
+      onClick={() => handleClick(children)}
+    >
       {children}
     </div>
   );

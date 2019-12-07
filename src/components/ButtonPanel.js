@@ -12,7 +12,7 @@ const ButtonPanel = (props) => {
 
   return (
     <div className="button-panel">
-      {buttons.map((elem, i) => (<Button handleClick={props.handleClick} key={`${i}`}>{elem}</Button>))}
+      {buttons.map((elem, i) => (<Button handleClick={props.handleClick} key={`${elem}-${i}`}>{elem}</Button>))}
     </div>
   );
 };
