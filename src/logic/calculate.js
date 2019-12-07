@@ -9,6 +9,22 @@ const calculate = (data, button) => {
     total = null;
     next = null;
     operation = null;
+  } else if (button === 'DEL') {
+    if (next) {
+      if (next.length === 2 && next.match(/-/)) {
+        next = null;
+      } else {
+        next = next.length === 1 ? null : next.slice(0, -1);
+      }
+    } else if (operation) {
+      operation = null;
+    } else if (total) {
+      if (total.length === 2 && total.match(/-/)) {
+        total = null;
+      } else {
+        total = total.length === 1 ? null : total.slice(0, -1);
+      }
+    }
   } else if (button === '=') {
     if (total && next && operation) {
       total = operate(total, next, operation);

@@ -51,9 +51,8 @@ body {
   background-color: #6B82F2;
 }
 
-.button:nth-of-type(19) {
+.button:nth-of-type(20) {
   background-color: #FF1E4B;
-  grid-column: span 2;
 }
 
 .button:hover {

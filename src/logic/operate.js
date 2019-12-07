@@ -10,7 +10,7 @@ const operate = (num1, num2, operation) => {
     op = operation;
   }
 
-  return evaluate(`${num1}${op}${num2}`);
+  return evaluate(`${num1}${op}${num2}`).toString();
 };
 
 export default operate;

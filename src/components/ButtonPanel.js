@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 const ButtonPanel = (props) => {
   const buttons = [
-    'AC', '+/-', '%', '÷', '7',
+    'AC', 'DEL', '%', '÷', '7',
     '8', '9', 'X', '4', '5',
     '6', '-', '1', '2', '3',
-    '+', '0', '.', '=',
+    '+', '0', '.', '+/-', '=',
   ];
 
   return (
