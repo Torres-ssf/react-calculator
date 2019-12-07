@@ -1,14 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { handleClick, children } = props
+  const { handleClick, children } = props;
 
-  return (<div
-    className="button"
-    onClick={() => handleClick(children)}>
-    {children}
-  </div>);
+  return (
+    <div
+      className="button"
+      onClick={() => handleClick(children)}>
+      {children}
+    </div>
+  );
 };
 
 Button.propTypes = {

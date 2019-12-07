@@ -1,7 +1,7 @@
 import Big from 'big.js';
 
 const operate = (num1, num2, operation) => {
-  let n = Big(num1);
+  const n = Big(num1);
   let evaluation;
 
   switch (operation) {

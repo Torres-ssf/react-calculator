@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const ButtonPanel = (props) => {
   const buttons = [
@@ -12,7 +12,7 @@ const ButtonPanel = (props) => {
 
   return (
     <div className="button-panel">
-      {buttons.map((elem, i) => (<Button handleClick={props.handleClick} key={i}>{elem}</Button>))}
+      {buttons.map((elem, i) => (<Button handleClick={props.handleClick} key={`${i}`}>{elem}</Button>))}
     </div>
   );
 };
