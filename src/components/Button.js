@@ -5,12 +5,12 @@ const Button = (props) => {
   const { handleClick, children } = props;
 
   return (
-    <div
+    <button
       className="button"
       onClick={() => handleClick(children)}
     >
       {children}
-    </div>
+    </button>
   );
 };
 
