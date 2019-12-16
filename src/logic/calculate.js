@@ -9,7 +9,7 @@ const calculate = (data, button) => {
     total = null;
     operation = null;
     next = null;
-  }
+  };
 
   if (total && total.match(/Invalid/)) {
     reset();
@@ -58,12 +58,10 @@ const calculate = (data, button) => {
       total = operate(total, '-1', 'x');
     }
   } else if (next) {
-    console.log("next nao nulo mais");
     if (button !== '.' || (button === '.' && next.indexOf(button) < 0)) {
       next = next.concat(button);
     }
   } else {
-    console.log('ainda passei aqui');
     next = button;
   }
 
