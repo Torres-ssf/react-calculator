@@ -17,7 +17,11 @@ The purpose is to create a Calculator app using React. The features of the app a
 
 [Heroku live link](https://react-calculator99.herokuapp.com/).
 
-### Setup
+## Preview
+
+![Peek 2019-12-16 12-03](https://user-images.githubusercontent.com/30977845/70919078-f32a2080-1ffe-11ea-9884-a537e7b587ef.gif)
+
+## Setup
 
 ```bash
 git clone git@github.com:Torres-ssf/react-calculator.git
