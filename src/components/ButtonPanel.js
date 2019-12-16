@@ -1,42 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
-  const greyColor = '#E0E0E0';
+const ButtonPanel = (props) => {
+  const buttons = [
+    'AC', 'DEL', '%', '÷', '7',
+    '8', '9', 'x', '4', '5',
+    '6', '-', '1', '2', '3',
+    '+', '0', '.', '+/-', '=',
+  ];
 
   return (
-    <div className="buttonPanel flex">
-      <div className="group g1">
-        <Button buttonName="AC" color={greyColor} />
-        <Button buttonName="+/-" color={greyColor} />
-        <Button buttonName="%" color={greyColor} />
-        <Button buttonName="÷" />
-      </div>
-      <div className="group g2">
-        <Button buttonName="7" color={greyColor} />
-        <Button buttonName="8" color={greyColor} />
-        <Button buttonName="9" color={greyColor} />
-        <Button buttonName="X" />
-      </div>
-      <div className="group g3">
-        <Button buttonName="4" color={greyColor} />
-        <Button buttonName="5" color={greyColor} />
-        <Button buttonName="6" color={greyColor} />
-        <Button buttonName="-" />
-      </div>
-      <div className="group g4">
-        <Button buttonName="1" color={greyColor} />
-        <Button buttonName="2" color={greyColor} />
-        <Button buttonName="3" color={greyColor} />
-        <Button buttonName="+" />
-      </div>
-      <div className="group g5">
-        <Button buttonName="0" color={greyColor} wide />
-        <Button buttonName="." color={greyColor} />
-        <Button buttonName="=" />
-      </div>
+    <div className="button-panel">
+      {buttons.map(elem => (<Button handleClick={props.handleClick} key={`${elem}-`}>{elem}</Button>))}
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

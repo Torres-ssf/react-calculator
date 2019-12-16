@@ -1,15 +1,37 @@
 import React, { Component } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
 import '../App.css';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClickBtn = this.handleClickBtn.bind(this);
+    this.resultToStr = this.resultToStr.bind(this);
+  }
+
+  handleClickBtn(button) {
+    const data = calculate(this.state, button);
+    this.setState(data);
+  }
+
+  resultToStr() {
+    const { total, next, operation } = this.state;
+    const result = `${total}${operation}${next}`.replace(/null/g, '');
+    return result === '' ? undefined : result;
+  }
+
   render() {
     return (
-      <div className="App flex">
-        <Display />
-        <ButtonPanel />
+      <div className="App">
+        <Display result={this.resultToStr()} />
+        <ButtonPanel handleClick={this.handleClickBtn} />
       </div>
     );
   }

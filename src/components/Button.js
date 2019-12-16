@@ -2,26 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { buttonName, color, wide } = props;
-  const buttonWide = wide ? '0 0 50%' : '0 0 25%';
+  const { handleClick, children } = props;
 
-  const styles = {
-    backgroundColor: color,
-    flex: buttonWide,
-  };
-
-  return <div className="button" style={styles}>{buttonName}</div>;
-};
-
-export default Button;
-
-Button.defaultProps = {
-  color: '#F5913E',
-  wide: false,
+  return (
+    <button
+      className="button"
+      type="button"
+      onClick={() => handleClick(children)}
+    >
+      {children}
+    </button>
+  );
 };
 
 Button.propTypes = {
-  buttonName: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  wide: PropTypes.bool,
+  children: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
+
+export default Button;
