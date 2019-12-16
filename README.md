@@ -10,13 +10,12 @@ The purpose is to create a Calculator app using React. The features of the app a
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- React
+- Big.js
 
 ## Live Demo
 
-[Heroku live link](https://react-calculator-t99.herokuapp.com/).
+[Heroku live link](https://react-calculator99.herokuapp.com/).
 
 ### Setup
 
