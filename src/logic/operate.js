@@ -15,7 +15,11 @@ const operate = (num1, num2, operation) => {
       evaluation = n.times(num2);
       break;
     case '÷':
-      evaluation = n.div(num2);
+      if (num2 === '0') {
+        evaluation = 'Invalid operation: division by 0';
+      } else {
+        evaluation = n.div(num2);
+      }
       break;
     default:
       evaluation = n.mod(num2);

@@ -5,10 +5,18 @@ const calculate = (data, button) => {
 
   const operations = ['+', '-', 'x', '÷', '%'];
 
-  if (button === 'AC') {
+  const reset = () => {
     total = null;
-    next = null;
     operation = null;
+    next = null;
+  }
+
+  if (total && total.match(/Invalid/)) {
+    reset();
+  }
+
+  if (button === 'AC') {
+    reset();
   } else if (button === 'DEL') {
     if (next) {
       if (next.length === 2 && next.match(/-/)) {
@@ -50,10 +58,12 @@ const calculate = (data, button) => {
       total = operate(total, '-1', 'x');
     }
   } else if (next) {
+    console.log("next nao nulo mais");
     if (button !== '.' || (button === '.' && next.indexOf(button) < 0)) {
       next = next.concat(button);
     }
   } else {
+    console.log('ainda passei aqui');
     next = button;
   }
 
