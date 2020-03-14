@@ -6,9 +6,10 @@ const Display = (props) => {
   const { result, animation, setAnim } = props;
   return (
     <div className="display">
-      <span 
+      <span
         className={`span-ripple ${animation}`}
-        onAnimationEnd={() => setAnim(false)} />
+        onAnimationEnd={() => setAnim(false)}
+      />
       <p>{result}</p>
     </div>
   );
@@ -20,8 +21,8 @@ Display.defaultProps = {
 
 Display.propTypes = {
   result: PropTypes.string,
-  animation: PropTypes.string,
-  setAnim: PropTypes.func,
+  animation: PropTypes.string.isRequired,
+  setAnim: PropTypes.func.isRequired,
 };
 
 export default Display;

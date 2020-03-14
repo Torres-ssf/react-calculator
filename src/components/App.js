@@ -25,11 +25,11 @@ class App extends Component {
   }
 
   handleClickBtn(button) {
-    if(button === 'AC') {
+    if (button === 'AC') {
       this.triggerAnimation(true);
     }
     const { total, next, operation } = this.state;
-    const data = calculate({total, next, operation}, button);
+    const data = calculate({ total, next, operation }, button);
     this.setState(data);
   }
 
@@ -42,10 +42,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Display 
-          result={this.resultToStr()} 
+        <Display
+          result={this.resultToStr()}
           animation={this.state.animation}
-          setAnim={this.triggerAnimation}  />
+          setAnim={this.triggerAnimation} />
         <ButtonPanel handleClick={this.handleClickBtn} />
       </div>
     );
