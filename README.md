@@ -7,14 +7,14 @@ The purpose is to create a Calculator app using React. The features of the app a
 - Basic binary operations
 - Calculations with big numbers
 
-## Preview
-
-![](./demo.gif)
-
 ## Built With
 
 - React
 - Big.js
+
+## Preview
+
+![](./demo.gif)
 
 ## Live Demo
 
