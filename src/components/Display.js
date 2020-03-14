@@ -3,8 +3,16 @@ import PropTypes from 'prop-types';
 import '../App.css';
 
 const Display = (props) => {
-  const { result } = props;
-  return <div className="display"><p>{result}</p></div>;
+  const { result, animation, setAnim } = props;
+  return (
+    <div className="display">
+      <span
+        className={`span-ripple ${animation}`}
+        onAnimationEnd={() => setAnim(false)}
+      />
+      <p>{result}</p>
+    </div>
+  );
 };
 
 Display.defaultProps = {
@@ -13,6 +21,8 @@ Display.defaultProps = {
 
 Display.propTypes = {
   result: PropTypes.string,
+  animation: PropTypes.string.isRequired,
+  setAnim: PropTypes.func.isRequired,
 };
 
 export default Display;

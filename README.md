@@ -6,44 +6,43 @@ The purpose is to create a Calculator app using React. The features of the app a
 
 - Basic binary operations
 - Calculations with big numbers
-- Linting with ESLint
 
 ## Built With
 
 - React
 - Big.js
 
-## Live Demo
-
-[Heroku live link](https://react-calculator99.herokuapp.com/).
-
 ## Preview
 
-![Peek 2019-12-16 12-03](https://user-images.githubusercontent.com/30977845/70919078-f32a2080-1ffe-11ea-9884-a537e7b587ef.gif)
+![](./demo.gif)
 
-## Setup
+## Live Demo
+
+[Live link](https://react-calculator99.herokuapp.com/).
+
+## Getting Started
 
 ```bash
 git clone git@github.com:Torres-ssf/react-calculator.git
 ```
+
+### Prerequisites
+
+- npm and yarn.
+
 ### Install
 
 ```bash
 yarn install
 ```
-### Run linter
 
-```bash
-yarn lint:check
-```
-
-### Start server (Development mode)
+### Usage
 
 ```bash
 yarn start
 ```
 
-### Start server (Production mode)
+### Deployment
 
 ```bash
 yarn build
@@ -51,14 +50,22 @@ yarn build
 
 ## Authors
 
-👤 **Author**
+👤 **Sérgio Torres**
 
-- Github: [@Torres-ssf](https://github.com/Torres-ssf)
+- Github: [Torres-ssf](https://github.com/Torres-ssf)
+- Twitter: [@torres_ssf](https://twitter.com/torres_ssf)
+- Linkedin: [torres-ssf](https://www.linkedin.com/in/torres-ssf/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/Torres-ssf/react-calculator/issues).
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
