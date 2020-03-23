@@ -18,7 +18,7 @@ The purpose is to create a Calculator app using React. The features of the app a
 
 ## Live Demo
 
-[Live link](https://react-calculator99.herokuapp.com/).
+[Live link](https://ssf-calculator.netlify.com/).
 
 ## Getting Started
 
