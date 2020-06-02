@@ -1,6 +1,6 @@
 # Calculator App (React)
 
-This project is one of the Main React and Redux curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
+This project is one of the main projects found in the React and Redux curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
 
 The purpose is to create a Calculator app using React. The features of the app also include:
 
